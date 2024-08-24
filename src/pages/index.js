@@ -20,7 +20,7 @@ const features = [
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/miscellany/formats">
+            to="/docs/strapi/getting-started/intro">
             Details
           </Link>
         </div>
@@ -38,7 +38,7 @@ const features = [
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/getting-started/examples/export">
+            to="/docs/Ghost">
             Example
           </Link>
         </div>
@@ -56,7 +56,7 @@ const features = [
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/demos/">
+            to="/docs/hugo/getting-started/quick-start">
             Projects
           </Link>
         </div>
