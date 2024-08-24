@@ -1,0 +1,26 @@
+---
+title: Notifications
+
+description: View your notifications on Strapi Cloud.
+
+
+---
+
+# Notifications
+
+The Notification center can be opened by clicking the bell icon ![Notification icon](/img/assets/icons/notifications.svg) in the top navigation of the Cloud dashboard.
+
+It displays a list of the latest notifications for all your existing projects. Clicking on a notification card from the list will redirect you to the *Log details* page of the corresponding deployment (more information in [Deploy history & logs](/cloud/projects/deploys-history#accessing-deployment-details--logs)).
+
+
+
+The following notifications can be listed in the Notifications center:
+
+- *Deploy completed*: when a deployment is successfully done.
+- *Build failed*: when a deployment fails during the build stage.
+- *Deploy failed*: when a deployment fails during the deployment stage.
+- *Deploy triggered*: when a deployment is triggered by a new push to the connected repository. This notification is however not sent when the deployment is triggered manually.
+
+:::note
+All notifications older than 30 days are automatically removed from the Notification center.
+:::

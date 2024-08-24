@@ -1,0 +1,25 @@
+---
+title: transform.HTMLEscape
+description: Returns the given string, escaping special characters by replacing them with HTML entities.
+
+
+
+
+---
+
+The `transform.HTMLEscape` function escapes five special characters by replacing them with [HTML entities]:
+
+- `&` → `&amp;`
+- `<` → `&lt;`
+- `>` → `&gt;`
+- `'` → `&#39;`
+- `"` → `&#34;`
+
+For example:
+
+```go-html-template
+{{ htmlEscape "Lilo & Stitch" }} → Lilo &amp; Stitch
+{{ htmlEscape "7 > 6" }} → 7 &gt; 6
+```
+
+[html entities]: https://developer.mozilla.org/en-US/docs/Glossary/Entity
