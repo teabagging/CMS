@@ -1,6 +1,6 @@
 
 
-# ✨ [NGINX Config](https://do.co/nginxconfig)
+# ✨ NGINX Config
 
 NGINX is so much more than just a webserver. You already knew that, probably.
 

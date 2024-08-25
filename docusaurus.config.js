@@ -99,6 +99,7 @@ const config = {
           {to: '/docs/strapi/getting-started/intro', label: 'strapi', position: 'right'},
           {to: '/docs/hugo/getting-started/quick-start', label: 'hugo', position: 'right'},
           {to: '/docs/Ghost/Getting%20Started/Ghost%20on%20Ubuntu', label: 'Ghost', position: 'right'},
+          {to: '/docs/WordPress/Get%20started%20with%20WordPress', label: 'WordPress', position: 'right'},
           { href: 'https://www.543x.com', label: 'Help', position: 'right' },
           {
             href: 'https://github.com/teabagging/CMS',
