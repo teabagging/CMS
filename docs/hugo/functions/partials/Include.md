@@ -55,9 +55,9 @@ You can pass anything in context: a page, a page collection, a scalar value, a s
 Then, within the partial template:
 
 ```go-html-template
-<p>{{ .name }} is majoring in {{ .major }}.</p>
-<p>Their grade point average is {{ .gpa }}.</p>
-<p>See <a href="{{ .page.RelPermalink }}">details.</a></p>
+{{ .name }} is majoring in {{ .major }}.
+Their grade point average is {{ .gpa }}.
+See <a href="{{ .page.RelPermalink }}">details.</a>
 ```
 
 To return a value from a partial template, it must contain only one `return` statement, placed at the end of the template:

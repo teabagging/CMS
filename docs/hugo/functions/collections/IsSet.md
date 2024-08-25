@@ -30,7 +30,7 @@ But if the value of `showHeroImage` is `false`, we can't use either `if` or `wit
 
 ```go-html-template
 {{ if isset site.Params "showheroimage" }}
-  <p>The showHeroImage parameter is set to {{ site.Params.showHeroImage }}.<p>
+  The showHeroImage parameter is set to {{ site.Params.showHeroImage }}.
 {{ end }}
 ```
 

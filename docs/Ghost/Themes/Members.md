@@ -51,7 +51,7 @@ Add `data-members-name` to an input element to capture a member’s name at sign
 Capture form errors with `data-members-error`. Errors could include too many attempts to sign up or trying to subscribe to a newsletter that no longer exists (see below):
 
 ```html
-<p data-members-error></p>
+<p data-members-error>
 ```
 
 ### Newsletter subscriptions
@@ -178,7 +178,7 @@ Implement error messages when a form or subscription button causes an error by a
 ```html
 <form data-members-form>
   ...
-  <p data-members-error><!-- error message will appear here --></p>
+  <p data-members-error><!-- error message will appear here -->
 </form>
 ```
 
@@ -203,9 +203,9 @@ This setting is applied in the Admin UI as the [post access level](https://ghost
   <h1>{{title}}</h1>
 
   {{#if access}}
-    <p>Thanks for being a member...</p>
+    Thanks for being a member...
   {{else}}
-    <p>You need to become a member in order to read this post... </p>
+    You need to become a member in order to read this post... 
   {{/if}}
 
   {{content}}
@@ -224,9 +224,9 @@ The `@member` object can be used to determine which content within the theme is 
 
 ```handlebars
 {{#if @member}}
-  <p>Thanks for becoming a member 🎉</p>
+  Thanks for becoming a member 🎉
 {{else}}
-  <p>You should totally sign up... 🖋</p>
+  You should totally sign up... 🖋
 {{/if}}
 ```
 
@@ -234,7 +234,7 @@ Using `@member.paid` allows you to expose different content to members who have 
 
 ```handlebars
 {{#if @member.paid}}
-  <p>Thanks for becoming a paying member 🎉</p>
+  Thanks for becoming a paying member 🎉
 {{/if}}
 ```
 
@@ -244,11 +244,11 @@ These two boolean values can be used together to customise UI and messages withi
 
 ```handlebars
 {{#if @member.paid}}
-  <p>Thanks for becoming a paying member 🎉</p>
+  Thanks for becoming a paying member 🎉
 {{else if @member}}
-  <p>Thanks for being a member 🙌</p>
+  Thanks for being a member 🙌
 {{else}}
-  <p>You should totally sign up... 🖋</p>
+  You should totally sign up... 🖋
 {{/if}}
 ```
 
@@ -347,11 +347,11 @@ Members may have multiple subscriptions, provided as an array. Subscription data
 ```handlebars
 {{#foreach @member.subscriptions}}
 
-  <p>Name: <strong>{{customer.name}}</strong></p>
+  Name: <strong>{{customer.name}}</strong>
 
-  <p>Plan type: <strong>{{plan.nickname}}</strong></p>
+  Plan type: <strong>{{plan.nickname}}</strong>
 
-  <p>Status: <strong>{{status}}</strong></p>
+  Status: <strong>{{status}}</strong>
 
 {{/foreach}}
 ```
@@ -471,13 +471,13 @@ It’s used inside a `{{#foreach @member.subscriptions}}` loop which provides th
 {{#foreach @member.subscriptions}}
   <div class="subscription">
     {{#if cancel_at_period_end}}
-      <p>
+      
         <strong class="subscription-expiration-warning">Your subscription will expire on {{date current_period_end format="DD MMM YYYY"}}.</strong> If you change your mind in the mean time you can turn auto-renew back on to continue your subscription.
-      </p>
+      
     {{else}}
-      <p>
+      
         Hey! You have an active {{@site.title}} account with access to all areas. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing.
-      </p>
+      
     {{/if}}
     <div class="subscriber-details">
       <div class="subscriber-detail">

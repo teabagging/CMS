@@ -35,7 +35,7 @@ By way of example, let's create a partial template that _renders_ HTML, describi
 When called, the partial renders HTML:
 
 ```go-html-template
-{{ partial "odd-or-even.html" 42 }} → <p>42 is even</p>
+{{ partial "odd-or-even.html" 42 }} → 42 is even
 ```
 
 Instead of rendering HTML, let's create a partial that _returns_ a boolean value, reporting whether the given number is even:
@@ -45,16 +45,16 @@ With this template:
 ```go-html-template
 {{ $number := 42 }}
 {{ if partial "is-even.html" $number }}
-  <p>{{ $number }} is even</p>
+  {{ $number }} is even
 {{ else }}
-  <p>{{ $number }} is odd</p>
+  {{ $number }} is odd
 {{ end }}
 ```
 
 Hugo renders:
 
 ```html
-<p>42 is even</p>
+42 is even
 ```
 
 See additional examples in the [partial templates] section.

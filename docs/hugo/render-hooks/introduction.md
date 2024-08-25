@@ -34,15 +34,15 @@ For example, consider this Markdown:
 Without link or image render hooks, this example above is rendered to:
 
 ```html
-<p><a href="https://gohugo.io">Hugo</a></p>
-<p><img alt="kitten" src="kitten.jpg"></p>
+<a href="https://gohugo.io">Hugo</a>
+<img alt="kitten" src="kitten.jpg">
 ```
 
 By creating link and image render hooks, you can alter the conversion from Markdown to HTML. For example:
 
 ```html
-<p><a href="https://gohugo.io" rel="external">Hugo</a></p>
-<p><img alt="kitten" src="kitten.jpg" width="600" height="400"></p>
+<a href="https://gohugo.io" rel="external">Hugo</a>
+<img alt="kitten" src="kitten.jpg" width="600" height="400">
 ```
 
 Each render hook is a template, with one template for each supported element type:

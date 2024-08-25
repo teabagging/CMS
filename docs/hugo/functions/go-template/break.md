@@ -15,14 +15,14 @@ This template code:
   {{ if eq . "bar" }}
     {{ break }}
   {{ end }}
-  <p>{{ . }}</p>
+  {{ . }}
 {{ end }}
 ```
 
 Is rendered to:
 
 ```html
-<p>foo</p>
+foo
 ```
 
 

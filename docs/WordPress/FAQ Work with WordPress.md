@@ -256,7 +256,7 @@ Depending on your theme, some other message of similar intent may be displayed. 
 If it’s simply HTML, comment out the enclosing HTML tags by adding ‘`&lt;!--<span> </span>`‘ and ‘`<span> </span>--&gt;`‘ *(not including the quotes, note the space after the first and before the last comment symbols)*:
 
 ```
-<!-- <p class="nocomments">Comments are closed.</p> -->
+<!-- <p class="nocomments">Comments are closed. -->
 ```
 
 If you decide later to restore the message, you can simply remove the comment symbols.

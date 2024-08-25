@@ -32,13 +32,13 @@ Without a safe declaration:
 
 ```go-html-template
 {{ $style := "color: red;" }}
-<p style="{{ $style }}">foo</p>
+<p style="{{ $style }}">foo
 ```
 
 Hugo renders the above to:
 
 ```html
-<p style="ZgotmplZ">foo</p>
+<p style="ZgotmplZ">foo
 ```
 
 
@@ -49,11 +49,11 @@ To declare the string as safe:
 
 ```go-html-template
 {{ $style := "color: red;" }}
-<p style="{{ $style | safeCSS }}">foo</p>
+<p style="{{ $style | safeCSS }}">foo
 ```
 
 Hugo renders the above to:
 
 ```html
-<p style="color: red;">foo</p>
+<p style="color: red;">foo
 ```

@@ -54,7 +54,7 @@ Here’s a sample post object from the Ghost [Content API](https://ghost.org/doc
       "id": "5ddc9141c35e7700383b2937",
       "uuid": "a5aa9bd8-ea31-415c-b452-3040dae1e730",
       "title": "Welcome",
-      "html": "<p>👋 Welcome, it's great to have you here.</p>",
+      "html": "👋 Welcome, it's great to have you here.",
       "comment_id": "5ddc9141c35e7700383b2937",
       "feature_image": "https://static.ghost.org/v3.0.0/images/welcome-to-ghost.png",
       "feature_image_alt": null,

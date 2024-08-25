@@ -64,7 +64,7 @@ The syntax used to build custom membership flows has changed significantly.
   {{#foreach tiers}}
     <div>
       <h2>{{name}}</h2> {{! Output tier name }}
-      <p>{{description}}<p> {{! Output tier description }}
+      {{description}} {{! Output tier description }}
 
       {{#if monthly_price}} {{! If tier has a monthly price, generate a Stripe sign up link }}
         <a href="javascript:" data-portal="signup/{{id}}/monthly">Monthly –
@@ -89,13 +89,13 @@ The syntax used to build custom membership flows has changed significantly.
 
 ```handlebars
 <h2>{{@member.name}}</h2>
-<p>{{@member.email}}</p>
+{{@member.email}}
     {{#foreach @member.subscriptions}}
-    <p>Tier name: <strong>{{tier.name}}</strong></p>
-    <p>Subscription status: <strong>{{status}}</strong></p>
-    <p>Amount: {{price plan numberFormat="long"}}/{{plan.interval}}</p>
-    <p>Start date: {{date start_date}}</p>
-    <p>End date: {{date current_period_end}}</p>
+    Tier name: <strong>{{tier.name}}</strong>
+    Subscription status: <strong>{{status}}</strong>
+    Amount: {{price plan numberFormat="long"}}/{{plan.interval}}
+    Start date: {{date start_date}}
+    End date: {{date current_period_end}}
     {{cancel_link}} {{! Generate a link to cancel the membership }}
     {{/foreach}}
 </div>

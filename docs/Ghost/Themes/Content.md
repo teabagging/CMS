@@ -50,7 +50,7 @@ The specific implementation required for making images wider than their containe
   <article>
     <h1>Image size implementation</h1>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at interdum ipsum.</p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at interdum ipsum.
 
 
     <figure class="kg-image-card kg-width-full">
@@ -58,14 +58,14 @@ The specific implementation required for making images wider than their containe
       <figcaption>A full-width image</figcaption>
     </figure>
 
-    <p>Fusce interdum velit tristique, scelerisque libero et, venenatis nisi. Maecenas euismod luctus neque nec finibus.</p>
+    Fusce interdum velit tristique, scelerisque libero et, venenatis nisi. Maecenas euismod luctus neque nec finibus.
 
     <figure class="kg-image-card kg-width-wide">
       <img class="kg-image" src="https://casper.ghost.org/v1.25.0/images/koenig-demo-1.jpg" width="1600" height="2400" loading="lazy" srcset="..." sizes="...">
       <figcaption>A wide image</figcaption>
     </figure>
 
-    <p>Suspendisse sed lacus efficitur, euismod nisi a, sollicitudin orci.</p>
+    Suspendisse sed lacus efficitur, euismod nisi a, sollicitudin orci.
   </article>
 </div>
 
@@ -598,7 +598,7 @@ The signup card adds a customizable signup form to posts. (Only available in the
 
       <p class="kg-signup-card-disclaimer" style="">
         <span>No spam. Unsubscribe anytime.</span>
-      </p>
+      
     </div>
   </div>
 </div>

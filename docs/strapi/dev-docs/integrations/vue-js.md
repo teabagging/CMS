@@ -409,7 +409,7 @@ fetch" label="fetch">
 
   <form id="form" v-on:submit="handleSubmit" v-else>
     <h3>Restaurants</h3>
-    <br>
+    
 
     <label for="name">Name</label>
     <input id="name" v-model="modifiedData.name" type="text" name="name">
@@ -419,7 +419,7 @@ fetch" label="fetch">
     <div>
       
       <b>Select categories</b>
-      <br>
+      
       <div v-for="category in allCategories" :key="category.id">
         <label>{{ category.name }}</label>
         <input
@@ -431,7 +431,7 @@ fetch" label="fetch">
         />
       </div>
     </div>
-    <br>
+    
 
     <input type="submit" value="Submit">
   </form>

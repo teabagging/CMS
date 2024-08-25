@@ -21,9 +21,9 @@ Use with the [`else`] statement:
 ```go-html-template
 {{ $s := slice "foo" "bar" "baz" }}
 {{ range $s }}
-  <p>{{ . }}</p>
+  {{ . }}
 {{ else }}
-  <p>The collection is empty</p>
+  The collection is empty
 {{ end }}
 ```
 
@@ -76,16 +76,16 @@ This template code:
 ```go-html-template
 {{ $s := slice "foo" "bar" "baz" }}
 {{ range $s }}
-  <p>{{ . }}</p>
+  {{ . }}
 {{ end }}
 ```
 
 Is rendered to:
 
 ```html
-<p>foo</p>
-<p>bar</p>
-<p>baz</p>
+foo
+bar
+baz
 ```
 
 This template code:
@@ -93,16 +93,16 @@ This template code:
 ```go-html-template
 {{ $s := slice "foo" "bar" "baz" }}
 {{ range $v := $s }}
-  <p>{{ $v }}</p>
+  {{ $v }}
 {{ end }}
 ```
 
 Is rendered to:
 
 ```html
-<p>foo</p>
-<p>bar</p>
-<p>baz</p>
+foo
+bar
+baz
 ```
 
 This template code:
@@ -110,16 +110,16 @@ This template code:
 ```go-html-template
 {{ $s := slice "foo" "bar" "baz" }}
 {{ range $k, $v := $s }}
-  <p>{{ $k }}: {{ $v }}</p>
+  {{ $k }}: {{ $v }}
 {{ end }}
 ```
 
 Is rendered to:
 
 ```html
-<p>0: foo</p>
-<p>1: bar</p>
-<p>2: baz</p>
+0: foo
+1: bar
+2: baz
 ```
 
 ## Array or slice of maps
@@ -133,16 +133,16 @@ This template code:
   (dict "name" "Joey" "age" 24)
 }}
 {{ range $m }}
-  <p>{{ .name }} is {{ .age }}</p>
+  {{ .name }} is {{ .age }}
 {{ end }}
 ```
 
 Is rendered to:
 
 ```html
-<p>John is 30</p>
-<p>Will is 28</p>
-<p>Joey is 24</p>
+John is 30
+Will is 28
+Joey is 24
 ```
 
 ## Array or slice of pages
@@ -170,15 +170,15 @@ This template code:
 ```go-html-template
 {{ $m :=  dict "name" "John" "age" 30 }}
 {{ range $k, $v := $m }}
-  <p>key = {{ $k }} value = {{ $v }}</p>
+  key = {{ $k }} value = {{ $v }}
 {{ end }}
 ```
 
 Is rendered to:
 
 ```go-html-template
-<p>key = age value = 30</p>
-<p>key = name value = John</p>
+key = age value = 30
+key = name value = John
 ```
 
 Unlike ranging over an array or slice, Hugo sorts by key when ranging over a map.

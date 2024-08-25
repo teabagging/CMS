@@ -39,7 +39,7 @@ To list the GET and POST operations for each of the API paths:
 
 ```go-html-template
 {{ range $path, $details := $api.Paths }}
-  <p>{{ $path }}</p>
+  {{ $path }}
   <dl>
     {{ with $details.Get }}
       <dt>GET</dt>
@@ -57,14 +57,14 @@ Hugo renders this to:
 
 
 ```html
-<p>/pets</p>
+/pets
 <dl>
   <dt>GET</dt>
   <dd>List all pets</dd>
   <dt>POST</dt>
   <dd>Create a pet</dd>
 </dl>
-<p>/pets/{petId}</p>
+/pets/{petId}
 <dl>
   <dt>GET</dt>
   <dd>Info for a specific pet</dd>

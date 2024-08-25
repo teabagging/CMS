@@ -54,10 +54,10 @@ The following diagram represents how requests travel through the Strapi back end
 graph TB
     request[Request] ---> globalMiddlewareA(("Global middlewarebefore await next()"))
     globalMiddlewareA --"Call next()"--> routePolicy{Route policy}
-    globalMiddlewareA --"Returns before next()<br>Goes back up in the middleware chain"-->globalMiddlewareB
+    globalMiddlewareA --"Returns before next()Goes back up in the middleware chain"-->globalMiddlewareB
     routePolicy --Returns true--> routeMiddlewareA(("Route middlewarebefore await next()"))
     routePolicy --Returns false or an error-->globalMiddlewareB
-    routeMiddlewareA --"Returns before next()<br>Goes back up in the middleware chain"-->routeMiddlewareB
+    routeMiddlewareA --"Returns before next()Goes back up in the middleware chain"-->routeMiddlewareB
     routeMiddlewareA --"Call next()"--> controllerA{{Controller}}
     controllerA --"Call Service(s)"--> serviceA{{Service}}
     controllerA --"Don't call Service(s)" --> routeMiddlewareB
@@ -65,9 +65,9 @@ graph TB
     serviceA --"Don't call Entity Service" --> controllerB
     entityService --"Call Query Engine"--> queryEngine{{Query Engine}}
     entityService --"Don't call Query Engine" --> serviceB
-    queryEngine --> lifecyclesBefore[/Lifecycle<br> beforeX\] 
-    lifecyclesBefore[/Lifecycle<br> beforeX\] --> database[(Database)]
-    database --> lifecyclesAfter[\Lifecycle<br> afterX/]
+    queryEngine --> lifecyclesBefore[/Lifecycle beforeX\] 
+    lifecyclesBefore[/Lifecycle beforeX\] --> database[(Database)]
+    database --> lifecyclesAfter[\Lifecycle afterX/]
     lifecyclesAfter --> serviceB{{"Serviceafter Entity Service call"}}
     serviceB --> controllerB{{"Controllerafter service call"}}
     controllerB --> routeMiddlewareB(("Route middlewareafter await next()"))

@@ -382,7 +382,7 @@ By default, the API expects and returns content in the **Lexical** format only. 
             "uuid": "a5aa9bd8-ea31-415c-b452-3040dae1e730",
             "title": "Welcome",
             "lexical": "{\"root\":{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Hello, beautiful world! 👋\",\"type\":\"extended-text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
-            "html": "<p>Hello, beautiful world! 👋</p>",
+            "html": "Hello, beautiful world! 👋",
             "comment_id": "5ddc9141c35e7700383b2937",
             "feature_image": "https://static.ghost.org/v3.0.0/images/welcome-to-ghost.png",
             "feature_image_alt": null,
@@ -605,7 +605,7 @@ To use HTML as the source for your content instead of Lexical, use the `source` 
     "posts": [
         {
             "title": "My test post",
-            "html": "<p>My post content. Work in progress...</p>",
+            "html": "My post content. Work in progress...",
             "status": "published"
         }
     ]
@@ -616,7 +616,7 @@ For lossless HTML conversion, you can wrap your HTML in a single Lexical card:
 
 ```html
 <!--kg-card-begin: html-->
-<p>HTML goes here</p>
+HTML goes here
 <!--kg-card-end: html-->
 ```
 

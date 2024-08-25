@@ -645,7 +645,7 @@ export default {
               }, // Metadatas for the label
               // Name of the key in the data we will display
               name: 'locales',
-              // Custom renderer: props  Object.keys(props).map(key  <p key={key}>key</p>)
+              // Custom renderer: props  Object.keys(props).map(key  <p key={key}>key)
               cellFormatter,
             },
           ],
