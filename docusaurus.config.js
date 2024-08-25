@@ -5,7 +5,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CMS',
-  tagline:'CMS enables seamless integration of creation and publishing,inspiring unlimited creative possibilities',
+  tagline:'CMS creation and publishing inspires unlimited creative possibilities',
   url: 'https://w.543x.com',
   favicon: 'img/favicon.png',
 
@@ -98,7 +98,7 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/docs/strapi/getting-started/intro', label: 'strapi', position: 'right'},
           {to: '/docs/hugo/getting-started/quick-start', label: 'hugo', position: 'right'},
-          {to: '/docs/Ghost', label: 'Ghost', position: 'right'},
+          {to: '/docs/Ghost/Getting%20Started/Ghost%20on%20Ubuntu', label: 'Ghost', position: 'right'},
           { href: 'https://www.543x.com', label: 'Help', position: 'right' },
           {
             href: 'https://github.com/teabagging/CMS',

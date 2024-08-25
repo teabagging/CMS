@@ -38,7 +38,7 @@ const features = [
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Ghost">
+            to="/docs/Ghost/Getting%20Started/Ghost%20on%20Ubuntu">
             Example
           </Link>
         </div>
@@ -134,7 +134,7 @@ function Home() {
             <div className={styles.getStarted}>
               <Link
                 className="button button--outline button--primary button--lg"
-                to={useBaseUrl('docs/getting-started')}
+                to={useBaseUrl('docs/strapi/getting-started/intro')}
               >
                 Get Started
               </Link>
